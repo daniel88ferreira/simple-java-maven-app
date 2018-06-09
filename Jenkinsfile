@@ -5,6 +5,11 @@ pipeline {
             args '-v /root/.m2:/root/.m2'
         }
     }
+
+    environment { 
+        CC = 'clang'
+    }
+
     stages {
         stage('Build') {
             steps {
@@ -13,7 +18,7 @@ pipeline {
         }
         stage('Some test') {
             steps {
-                echo 'Yoooo!'
+                echo "Yoooo ${CC}"
             }
         }
     }
