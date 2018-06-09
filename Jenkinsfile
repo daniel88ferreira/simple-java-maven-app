@@ -1,4 +1,9 @@
 pipeline {
+    node {
+        load "${WORKSPACE}//src//props.properties"
+        echo "PROJECT VERSION: ${version}"
+    }
+
     agent {
         docker {
             image 'maven:3-alpine'
