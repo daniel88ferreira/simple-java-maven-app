@@ -3,7 +3,7 @@ node{
         pwd
         ls -lR .
     """
-    load "props.properties"
+    load "build.properties"
     echo "PROJECT VERSION: ${version}"
 }
 
