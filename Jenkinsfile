@@ -1,5 +1,7 @@
-load "src//props.properties"
-echo "PROJECT VERSION: ${version}"
+node{
+    load "src//props.properties"
+    echo "PROJECT VERSION: ${version}"
+}
 
 pipeline {
 
