@@ -1,4 +1,4 @@
-load "${WORKSPACE}//src//props.properties"
+load "src//props.properties"
 echo "PROJECT VERSION: ${version}"
 
 pipeline {
