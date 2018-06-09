@@ -1,5 +1,5 @@
 node{
-    load "src/props.properties"
+    load "props.properties"
     sh """
         pwd
         ls -la
