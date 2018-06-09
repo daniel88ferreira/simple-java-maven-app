@@ -1,5 +1,9 @@
 node{
-    load "src//props.properties"
+    load "src/props.properties"
+    sh """
+        pwd
+        ls -la
+    """
     echo "PROJECT VERSION: ${version}"
 }
 
