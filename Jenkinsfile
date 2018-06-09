@@ -1,7 +1,7 @@
 node{
     sh """
         pwd
-        ls -la
+        ls -lR .
     """
     load "props.properties"
     echo "PROJECT VERSION: ${version}"
